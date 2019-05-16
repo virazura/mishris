@@ -1,0 +1,10 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Email Template",
+  "modified": "2019-02-18 11:21:23.363648",
+  "name": "Attendance Change Approval Notification",
+  "response": "<h1>Attendance Change Approval Notification</h1><h3>Details:</h3><table class=\"table table-bordered\"><tbody><tr><td data-row=\"1\">Employee</td><td data-row=\"1\">{{employee_name}}</td></tr><tr><td data-row=\"3\">Attendance Date</td><td data-row=\"3\">{{attendance_date}}</td></tr><tr><td data-row=\"insert-row-below\">Goal</td><td data-row=\"insert-row-below\">{{goal}}</td></tr><tr><td data-row=\"row-4qqo\">Reason</td><td data-row=\"row-4qqo\">{{reason}}</td></tr><tr><td data-row=\"5\">Status</td><td data-row=\"5\">{{status}}</td></tr></tbody></table><div><br></div>",
+  "subject": "Attendance Change Approval Notification"
+ }
+]

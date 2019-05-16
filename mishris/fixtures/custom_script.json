@@ -1,0 +1,47 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Custom Script",
+  "dt": "Salary Slip",
+  "modified": "2019-03-04 16:27:27.525769",
+  "name": "Salary Slip-Client",
+  "script": "if (cur_frm.doctype === \"Salary Slip\"){\n\t$(\".text-muted .no-decoration\").css(\"display\", 'none');\n}\n\nfrappe.ui.form.on(\"Salary Slip\", {\n\temployee: function(frm, dt, dn) {\n\t\tget_overtime_amount(frm.doc, dt, dn);\n\t\tcalculate_tax(frm.doc, dt, dn);\n\t}\n});\n\nvar get_overtime_amount = function(doc, dt, dn) {\n\treturn frappe.call({\n\t\tmethod: 'mishris.hr_add_on.doctype.overtime_record.overtime_record.get_total_amount',\n\t\targs: {\n\t\t\temployee: cur_frm.doc.employee,\n\t\t\tfrom_date: cur_frm.doc.start_date,\n\t\t\tto_date: cur_frm.doc.end_date\n\t\t},\n\t\tcallback: function(r) {\n\t\t\tcur_frm.set_value('overtime_amount',r.message);\n\t\t}\n\t});\n}\nvar calculate_tax = function(doc, dt, dn){\n\treturn frappe.call({\n\t\tmethod: 'mishris.indonesian_tax.doctype.employee_tax_income.employee_tax_income.calculate_tax',\n\t\targs: {\n\t\t\targs: doc\n\t\t},\n\t\tcallback: function(r) {\n\t\t\tcur_frm.set_value('tax_income',r.message.tax_amount);\n\t\t\tcur_frm.set_value('tax_regular',r.message.tax_regular);\n\t\t\tcur_frm.set_value('tax_iregular',r.message.tax_iregular);\n\t\t}\n\t});\n};",
+  "script_type": "Client"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Script",
+  "dt": "Employee",
+  "modified": "2019-03-14 10:58:18.102208",
+  "name": "Employee-Client",
+  "script": "frappe.ui.form.on('Employee', {\n    date_of_joining: function (frm) {\n        if (frm.doc.nip) {\n            var dateJoin = frm.doc.date_of_joining;\n\t     var noseries = frm.doc.name.split(\"/\");\n\t     var lastNo = noseries[noseries.length -1];\n            var convertTime = moment(dateJoin).format(\"YYYYMMDD\");\n            var nip = convertTime + lastNo;\n            frm.set_value('nip', nip);\n            frm.refresh_field('nip');\n        }\n    },\n   bank: function (frm) {\n        if (frm.doc.bank) {\n\t\tconsole.log(frm.doc.bank)\n            frm.set_value('bank_name', frm.doc.bank);\n            frm.refresh_field('bank_name');\n        }\n    }\n});",
+  "script_type": "Client"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Script",
+  "dt": "Attendance Change Request",
+  "modified": "2019-02-21 13:35:30.841807",
+  "name": "Attendance Change Request-Client",
+  "script": "frappe.ui.form.on('Attendance Change Request', {\n    before_submit: function (frm) {\n        if (!frm.doc.new_attendance) {\n            frappe.throw('New Attendance must be filled before submit');\n        }\n    }\n});",
+  "script_type": "Client"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Script",
+  "dt": "Employee Tax Income",
+  "modified": "2019-03-03 13:42:53.807448",
+  "name": "Employee Tax Income-Client",
+  "script": "var get_overtime_amount = function(doc, dt, dn)  {\n\temployee = \n\tstart_date = ''\n\tend_date = ''\n\treturn frappe.call({\n\t\tmethod: 'mishris.hr_add_on.doctype.overtime_record.overtime_record.get_total_amount',\n\t\tdoc: locals[dt][dn],\n\t\tcallback: function(r, rt) {\n\t\t\tcur_frm.refresh();\n\t\t\tcur_frm.set_value('overtime', rt)\n\t\t}\n\t})\n}\n\ncur_frm.cscript.employee = function(doc,dt,dn){\n\tget_overtime_amount(frm);\n}\n",
+  "script_type": "Client"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Script",
+  "dt": "Payroll Entry",
+  "modified": "2019-03-14 12:09:19.379212",
+  "name": "Payroll Entry-Client",
+  "script": "frappe.ui.form.on('Payroll Entry', {\n\trefresh: function(frm) {\n\t\tif (frm.doc.docstatus == 1) {\n\t\t\t\tif (frm.custom_buttons);\n\t\t\t\tfrm.events.add_export_account(frm);\n\t\t}\n\t},\n\tadd_export_account: function(frm) {\t\n\t\tif(frm.doc.salary_slips_submitted) {\n\t\t\tfrm.add_custom_button(__(\"Export BCA\"), function() {\n\t\t\t\texport_xls(frm, 'BCA');\n\t\t\t}).addClass(\"btn-primary\");\n\t\t\tfrm.add_custom_button(__(\"Export Other Bank\"), function() {\n\t\t\t\texport_xls(frm, 'Other');\n\t\t\t}).addClass(\"btn-primary\");\n\t\t}\n\t},\n});\n\nlet export_xls = function (frm, bank) {\n\tvar doc = frm.doc.name;\n\tvar bank = bank\n\twindow.location.href = repl(frappe.request.url +\n            '?cmd=%(cmd)s&payroll_entry=%(payroll_entry)s&bank_name=%(bank_name)s', {\n            cmd: \"mishris.hr_add_on.payroll_entry_addon.export_bank_entry\",\n            payroll_entry: doc,\n            bank_name: bank,\n        });\n};\n",
+  "script_type": "Client"
+ }
+]

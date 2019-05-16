@@ -1,0 +1,29 @@
+{% extends "templates/web.html" %}
+{% from "erpnext/templates/includes/macros.html" import product_image_square %}
+
+{% block page_content %}
+<div class='featured-products-section' itemscope itemtype="http://schema.org/Product">
+    <h5 class='featured-product-heading'><h2>{{ _("News and Blog") }}<h2></h5>
+    <div class="featured-products">
+        <div id="search-list" class="row" style="margin-top:40px;">
+            {% for item in blog_list %}
+            <a class="product-link" href="{{ item.route|abs_url }}">
+                <div class="col-sm-4 col-xs-4 product-image-wrapper">
+                    <div class="product-image-img">
+                        <!-- thumbnail not updated, and used as background image in item card -->
+                        {{ product_image_square(item.cover_image) }}
+                    <div class="product-text" itemprop="name"><h4>{{ item.title }}</h4></div>
+                    <div class="product-text">{{ item.intro }}</div>
+                    </div>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="text-center padding">
+        <a href="/blog" class="btn btn-primary all-products">
+            {{ _("View All") }}
+        </a>
+    </div>
+</div>
+{% endblock %}

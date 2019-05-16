@@ -1,0 +1,1074 @@
+{
+    "country_code": "id", 
+    "name": "Indonesia - Chart of Accounts MIS", 
+    "tree":
+    {
+	    "ASSET LANCAR": {
+	        "account_number": "100000",
+	        "root_type": "Asset",
+	        "KAS DAN SETARA KAS":{
+	            "account_number": "101000",        	
+	    	    "KAS": {
+		        	"Kas Kecil": {
+			            "account_number": "101101"
+		        	},
+		        	"Kas Besar": {
+			            "account_number": "101102"
+		        	},
+	            "account_number": "101100"
+		      	}
+	        },
+	        "BANK": {
+	            "account_number": "101200",
+	            "Bank BCA Gama (9989)": {
+		            "account_number": "101201"
+		        },
+	            "Bank BCA Gama (2575)": {
+		            "account_number": "101202"
+		        },
+		        "Bank Capital": {
+		            "account_number": "101203"
+		        },
+		        "Bank Mandiri": {
+		            "account_number": "101204"
+		        },
+		        "Bank Capital MIG": {
+		            "account_number": "101205"
+		        },
+		        "Bank Bukopin": {
+		            "account_number": "101206"
+		        },
+		        "Bank BCA Mutiara Palem": {
+		            "account_number": "101207"
+		        },
+		        "Bank Panin": {
+		            "account_number": "101208"
+		        },
+		        "Bank Maybank": {
+		            "account_number": "101209"
+		        },
+		        "Bank Mandiri USD": {
+		            "account_number": "101210"
+		        },
+		        "Money in Transit": {
+		            "account_number": "101299"
+		        }
+	        },
+	        "INVESTASI JANGKA PENDEK": {
+	            "account_number": "101300",
+		        "Deposito": {
+		            "account_number": "101301"
+		        },
+		        "Simpanan Lainnya": {
+		            "account_number": "101309"
+		        }
+	        },
+	        "PIUTANG USAHA DAN PEMBIAYAAN": {
+	            "account_number": "102000",
+	            "Piutang Usaha": {
+		            "account_number": "102001"
+		        },
+		        "Pendapatan Yang Masih Akan Diterima": {
+		            "account_number": "102700"
+		        },
+		        "Selisih Kurs": {
+		            "account_number": "102999"
+		        }
+	        },
+	        "PIUTANG AFILIASI": {
+	            "account_number": "103000",
+	            "Piutang ke PT. Multi Inti Guna": {
+		            "account_number": "103001"
+		        },
+	            "Piutang ke PT. Multi Inti Transport": {
+		            "account_number": "103002"
+		        },
+		        "Piutang ke PT. Multi Inti Karya": {
+		            "account_number": "103003"
+		        },
+		        "Piutang ke PT. Multi Inti Resources Sejahtera": {
+		            "account_number": "103004"
+		        },
+		        "Piutang ke PT. Multi Inti Financial Technology": {
+		            "account_number": "103005"
+		        },
+		        "Piutang ke PT. Pracico Inti Sejahtera": {
+		            "account_number": "103006"
+		        },
+		        "Piutang ke PT. Pracico Inti Utama": {
+		            "account_number": "103007"
+		        },
+		        "Piutang ke PT. Pracico Multi Finance": {
+		            "account_number": "103008"
+		        },
+		        "Piutang ke PT. Pracico Financial Syariah": {
+		            "account_number": "103009"
+		        },
+		        "Piutang ke PT. Siger Kencana": {
+		            "account_number": "103010"
+		        },
+		        "Piutang Afiliasi lainnya": {
+		            "account_number": "103099"
+		        }
+	        },
+	        "PIUTANG KARYAWAN": {
+	            "account_number":"104000",
+		        "Piutang Karyawan": {
+	    	        "account_number": "104001"
+	        	}
+	        },
+	        "PIUTANG LAIN LAIN": {
+	            "account_number": "105000",
+		        "Piutang Pemegang Saham": {
+		            "account_number": "105001"
+		        },
+	             "Piutang lainnya": {
+		            "account_number": "105009"
+		        }
+		     },
+	      "PENYISIHAN PIUTANG USAHA": {
+	            "account_number": "106000",
+		        "Penyisihan Piutang Usaha": {
+		            "account_number": "106001"
+		        }
+	        },
+	       "PENYISIHAN PIUTANG KARYAWAN": {
+	            "account_number": "107000",
+		        "Penyisihan Piutang Karyawan": {
+		            "account_number": "107001"
+		        }
+	        },
+	        "PENYISIHAN PIUTANG LAIN LAIN": {
+	            "account_number": "108000",
+		        "Penyisihan Piutang Saham": {
+		            "account_number": "108001"
+		        },
+		        "Penyisihan Piutang Lainnya": {
+		            "account_number": "108009"
+		        }
+	        },
+	        "UANG MUKA PIHAK KETIGA": {
+	            "account_number": "109000",
+		        "Uang Muka Pengadaan": {
+		            "account_number": "109001"
+		        },
+		        "Uang Muka Lainnya": {
+		            "account_number": "109009"
+		        }
+	        },
+	        "PERSEDIAAN": {
+	            "account_number": "110000",
+	            "Persediaan Kantor": {
+		            "account_number": "110001"
+	    	    },
+	            "Persediaan intransit": {
+		            "account_number": "110008"
+	    	    },
+	        	"Persediaan Lainnya": {
+	            	"account_number": "110009"
+		        }
+	        },
+	        "PENYISIHAN PERSEDIAAN":{
+				"account_number": "120000",
+				"Penyisihan Persediaan":{
+					"account_number": "120001"
+				}
+			},
+	        "PAJAK DIBAYAR DIMUKA": {
+	            "account_number": "130000",
+	            "Pajak Dibayar Dimuka PPh Pasal 22": {
+		            "account_number": "130001"
+		        },
+	            "Pajak Dibayar Dimuka PPh Pasal 23/26": {
+		            "account_number": "130002"
+		        },
+		        "Pajak Dibayar Dimuka PPh Pasal 25": {
+		            "account_number":"130003"
+		        },
+		        "Pajak Dibayar Dimuka PPh Pasal 21": {
+		            "account_number": "130004"
+		        },
+		        "Pajak Dibayar Dimuka PPh Pasal 4 ayat 2": {
+		            "account_number": "130005"
+		        },
+		        "Pajak Dibayar Dimuka PPN Masukan": {
+		            "account_number": "130006"
+		        },
+		        "Pajak Dibayar Dimuka Lainnya": {
+		            "account_number": "130009"
+		        }
+	        },
+	        "BIAYA DIBAYAR DIMUKA": {
+	            "account_number": "140000",
+		        "Sewa Dibayar Dimuka": {
+		            "account_number": "140001"
+		        },
+		        "Asuransi Dibayar Dimuka": {
+		            "account_number": "140002"
+		        },
+		        "Biaya Bagi Hasil Dibayar Dimuka": {
+		            "account_number": "140003"
+		        },
+		        "Biaya Dibayar Dimuka Lainnya": {
+		            "account_number": "140009"
+		        }
+	        },
+	        "INVESTASI": {
+	            "account_number": "150000",
+	            "Investasi PT. Multi Inti Transport": {
+			        "account_number": "150001"
+			    },
+	            "Investasi PT. Multi Inti Guna": {
+			        "account_number": "150002"
+			    },
+			    "Investasi PT. Multi Inti Karya": {
+			        "account_number": "150003"
+			    },
+			    "Investasi PT. Multi Inti Resources Sejahtera": {
+			        "account_number": "150004"
+			    },
+			    "Investasi PT. Multi Inti Financial Teknologi": {
+			        "account_number": "150005"
+			    }
+	        },
+	        "ASET LANCAR LAINNYA": {
+	            "account_number": "160000",
+	            "Titipan Sementara":{
+		            "account_number": "160001"
+	            },
+				"Aset Lancar Lainnya":{
+		            "account_number": "160009"
+				}
+	        }
+	    },
+	    "ASET TIDAK LANCAR": {
+	        "account_number": "200000",
+	        "root_type": "Asset",
+	        "INVESTASI JANGKA PANJANG": {
+	            "account_number": "201000",
+		        "SBI - Dimiliki Hingga Jatuh Tempo ": {
+		            "account_number": "201001"
+		        },
+		        "SBI - Tersedia Untuk Dijual": {
+		            "account_number": "201002"
+		        },
+		        "Investasi Saham": {
+		            "account_number": "201003"
+		        }
+	        },
+	        "ASET TETAP": {
+	            "account_number": "202000",
+		        "Tanah": {
+		            "account_number": "202001"
+		        },
+		        "Bangunan": {
+		            "account_number": "202002"
+		        },
+		        "Kendaraan": {
+		            "account_number": "202003"
+		        },
+		        "Mesin & Peralatan": {
+		            "account_number": "202004"
+		        },
+		        "Furniture": {
+		            "account_number": "202005"
+		        },
+		        "Komputer": {
+		            "account_number": "202006"
+		        },
+		        "Kapal": {
+		            "account_number": "202007"
+		        },
+		        "Kendaraan Bus": {
+		            "account_number": "202008"
+		        },
+		        "Pekerjaan Dalam Penyelesaian": {
+		            "account_number": "202009"
+		        },
+		        "FA Temporary": {
+		            "account_number": "202999"
+		        }
+	        },
+	        "AKUMULASI PENYUSUTAN ASET TETAP": {
+	            "account_number": "203000",
+	            "Tanah": {
+	    	        "account_number": "203001"
+		        },
+		        "Akumulasi Penyusutan Bangunan": {
+	    	        "account_number": "203002"
+		        },
+		        "Akumulasi Penyusutan Kendaraan": {
+		            "account_number": "203003"
+		        },
+		        "Akumulasi Penyusutan Mesin & Peralatan": {
+		            "account_number": "203004"
+		        },
+		        "Akumulasi  Penyusutan Furniture": {
+		            "account_number": "203005"
+		        },
+		        "Akumulasi Penyusutan Komputer": {
+		            "account_number": "203006"
+		        },
+		        "Akumulasi Penyusutan Kapal": {
+		            "account_number": "203007"
+		        },
+		        "Akumulasi Penyusutan Kendaraan Bus": {
+		            "account_number": "203008"
+		        }
+	        },
+	        "ASET TIDAK BERWUJUD": {
+	            "account_number": "204000",
+	            "Tanah": {
+	    	        "account_number": "204001"
+		        },
+	            "Software": {
+		            "account_number": "204002"
+		        },
+		        "Aset Tidak Berwujud Lainnya": {
+		            "account_number": "204009"
+		        }
+	        },
+	        "AKUMULASI AMORTISASI ASET TIDAK BERWUJUD": {
+	            "account_number": "205000",
+	            "Tanah": {
+	    	        "account_number": "205001"
+		        },
+	            "Software": {
+		            "account_number": "205002"
+		        },
+		        "Aset Tidak Berwujud Lainnya": {
+		            "account_number": "205009"
+		        }
+	        },
+	        "BEBAN DITANGGUHKAN": {
+	            "account_number": "20600",
+	      		 "Beban Ditangguhkan Lain - Lain": {
+	            	"account_number": "206001"
+		        },
+	    		 "Beban Ditangguhkan Lain Pra Operasional": {
+	            	"account_number": "206002"
+		        }
+	        },
+	        "AKUMULASI AMORTISASI BEBAN DITANGGUHKAN": {
+	            "account_number": "207000",
+		        "Akum. Amor. Beban Ditangguhkan Pra Operasional": {
+		            "account_number": "207001"
+		        },
+		        "Akum. Amor. Beban Ditangguhkan Lain-Lain": {
+		            "account_number": "207002"
+		        }
+	        },
+	        "ASET PAJAK TANGGUHAN":{
+	        	"account_number": "208000",
+	        	"Aset Pajak Tangguhan":{
+	        		"account_number": "208001"
+	        	}
+	        },
+	        "INVESTASI ANAK PERUSAHAAN":{
+	    		"account_number": "209000",
+	        	"Investasi Anak Perusahaan":{
+	        		"account_number": "209001"
+	        	}
+	        },
+	        "INVESTASI PADA PERUSAHAAN ASOSIASI":{
+				"account_number": "210000",
+	        	"Investasi Pada Perusahaan Asosiasi":{
+	        		"account_number": "210001"
+	        	}
+	        },
+	        "ASET TIDAK LANCAR LAINNYA": {        	
+	            "account_number": "220000",
+	            "Pekerjaan Dalam Penyelesaian":{
+	            	"account_number": "220001"
+	            },
+				"Aset Tidak Lancar Lainnya":{
+		            "account_number": "220009"
+				}
+	        }
+	    },
+	    "KEWAJIBAN JANGKA PENDEK": {
+	        "account_number": "300000",
+	        "root_type": "Liability",
+	        "HUTANG USAHA": {
+	            "account_number": "301000",
+	            "Hutang Usaha": {
+		            "account_number": "301001"
+		        },
+	            "Hutang Bagi Hasil": {
+		            "account_number": "301002"
+		        },
+		        "Hutang Komisi": {
+		            "account_number": "301003"
+		        },
+		        "Hutang Usaha yang Belum Ditagih (Accrual)": {
+		            "account_number": "301008"
+		        },
+		        "Hutang usaha lainnya": {
+		            "account_number": "301009"
+		        }
+	        },
+	        "HUTANG AFILIASI": {
+	            "account_number": "302000",
+	            "Hutang ke PT. Multi Inti Guna": {
+			        "account_number": "302001"
+			    },
+	            "Hutang ke PT. Multi Inti Transport": {
+			        "account_number": "302002"
+			    },
+			    "Hutang ke PT. Multi Inti Karya": {
+			        "account_number": "302003"
+			    },
+			    "Hutang ke PT. Multi Inti Resources Sejahtera": {
+			        "account_number": "302004"
+			    },
+			    "Hutang ke PT. Multi Inti Financial Technology": {
+			        "account_number": "302005"
+			    },
+			    "Hutang ke PT. Pracico Inti Sejahtera": {
+			        "account_number": "302006"
+			    },
+			    "Hutang ke PT. Pracico Inti Utama": {
+			        "account_number": "302007"
+			    },
+			    "Hutang ke PT. Pracico Multi Finance": {
+			        "account_number": "302008"
+			    },
+			    "Hutang ke PT. Pracico Financial Syariah": {
+			        "account_number": "302009"
+			    },
+			    "Hutang ke PT. Siger Kencana": {
+			        "account_number": "302010"
+			    },
+			    "Hutang Afiliasi lainnya": {
+			        "account_number": "302099"
+			    }
+	        },
+			"HUTANG BANK":{
+		        "account_number": "303000",
+				"Hutang Bank":{
+			        "account_number": "303001"
+				}
+			},
+	        "HUTANG PAJAK": {
+	            "account_number": "304000",
+	            "Hutang Pajak PPh Pasal 21": {
+		            "account_number": "304001"
+		        },
+	            "Hutang Pajak PPh Pasal 22": {
+		            "account_number": "304002"
+		        },
+		        "Hutang Pajak PPh Pasal 23": {
+		            "account_number": "304003"
+		        },
+		        "Hutang Pajak PPh Pasal 25": {
+		            "account_number": "304004"
+		        },
+		        "Hutang Pajak PPh Pasal 26": {
+		            "account_number": "304005"
+		        },
+		        "Hutang Pajak PPh Badan": {
+		            "account_number": "304006"
+		        },
+		        "Hutang Pajak PPN Keluaran": {
+		            "account_number": "304007"
+		        },
+		        "Hutang Pajak PPh Final Pasal 4 ayat (2)": {
+		            "account_number": "304008"
+		        },
+		        "Hutang Pajak PBB": {
+		            "account_number": "304009"
+		        },
+		        "Hutang Pajak Lain": {
+		            "account_number": "304099"
+		        }
+	        },
+	        "BEBAN YANG MASIH HARUS DIBAYAR (Accrued)": {
+	            "account_number": "305000",
+	            "Gaji":{
+	            	"account_number": "305001"
+	            },
+	            "BPJS Kesehatan": {
+		            "account_number": "305002"
+		        },
+		        "BPJS Ketenagakerjaan": {
+		            "account_number": "305003"
+		        },
+		        "BYMH Beban Lainnya": {
+		            "account_number": "305009"
+		        }
+	        },
+	        "PENDAPATAN DITERIMA DIMUKA (PDD) JANGKA PENDEK": {
+	            "account_number": "306000",
+	            "PDD JK. Pendek": {
+		            "account_number": "306100"
+		        },
+	            "PDD JK. PENDEK JASA PERBANKAN": {
+		            "account_number": "306200"
+		        },
+		        "PDD Jk. Pendek Konvensional": {
+		            "account_number": "306201"
+		        },
+		        "PDD Jk. Pendek Syariah": {
+		            "account_number": "306202"
+		        },
+		        "PDD Jk. Pendek Lainnya": {
+		            "account_number": "306900"
+		        }
+	        },
+	        "HUTANG BUNGA":{
+	        	"account_number": "307000",
+	        	"Hutang Usaha":{
+	        		"account_number": "307001" 
+	        	},
+	        	"is_group":1
+	        },
+	        "KEWAJIBAN IMBALAN KERJA JANGKA PENDEK":{
+				"account_number": "308000",
+				"Kewajiban Imbalan Kerja Jangka Pendek":{
+					"account_number": "308001"
+				},
+	        	"is_group":1
+	        },
+			"HUTANG DIVIDEN":{
+				"account_number": "309000",
+				"Hutang Dividen":{
+					"account_number": "309001"
+				}
+			},
+	        "HUTANG JANGKA PENDEK LAIN": {
+	            "account_number": "310000",
+	            "Hutang Komisaris": {
+		            "account_number": "310001"
+		        },
+	            "Hutang Kepada Investor": {
+		            "account_number": "310002"
+		        },
+		        "Hutang Kepada Investor 2017": {
+		            "account_number": "310003"
+		        },
+		        "Hutang Lainnya": {
+		            "account_number": "310009"
+		        }
+	        }
+	    },
+	    "KEWAJIBAN JANGKA PANJANG": {
+	        "account_number": "400000",
+	        "root_type": "Equity",
+			"HUTANG AFILIASI":{
+				"account_number": "401000",
+				"Hutang Dividen":{
+					"account_number": "401001"
+				}
+			},
+			"HUTANG BANK JANGKA PANJANG":{
+				"account_number": "402000",
+				"Hutang Bank":{
+					"account_number": "402001"
+				}
+			},
+			"HUTANG SEWA (LEASING)":{
+				"account_number": "403000",
+				"HUTANG SEWA (LEASING)":{
+					"account_number": "403001"
+				}
+			},
+			"PENDAPATAN DITERIMA DIMUKA (PDD) JANGKA PANJANG":{
+				"account_number": "404000",
+				"PDD JK. PANJANG":{
+					"account_number": "404001"
+				}
+			},
+			"HUTANG BUNGA":{
+				"account_number": "405000",
+				"Hutang Bunga":{
+					"account_number": "405001"
+				}
+			},
+			"KEWAJIBAN IMBALAN KERJA JANGKA PANJANG":{
+				"account_number": "406000",
+				"Kewajiban Imbalan Kerja Jangka Panjang":{
+					"account_number": "406001"				
+				}
+			},
+			"HUTANG DIVIDEN":{
+				"account_number": "407000",
+				"Hutang Dividen":{
+					"account_number": "407001"
+				}
+			},
+			"KEWAJIBAN PAJAK TANGGUHAN":{
+				"account_number": "408000",
+				"Kewajiban Pajak Tangguhan":{
+					"account_number": "408001"
+				}
+			},
+	        "HUTANG JANGKA PANJANG LAIN": {
+	            "account_number": "409000",
+	            "Hutang Kepada Investor": {
+		            "account_number": "409002"
+		        },
+		        "Hutang Lainnya": {
+		            "account_number": "409009"
+		        }
+	        },
+			"HAK MINORITAS":{
+				"account_number": "410000",
+				"Hak Minoritas":{
+					"account_number": "410001"
+				}
+			}        
+	    },
+	    "Ekuitas": {
+	        "account_number": "500000",
+	        "root_type": "Liability",
+	        "MODAL DISETOR":{
+	        	"account_number": "501000",
+	        	"Cadangan Modal":{
+	        		"account_number": "501001"
+	        	}
+	        },
+	        "TAMBAHAN MODAL DISETOR":{
+	        	"account_number": "502000",
+				"Tambahan Modal Disetor":{
+		        	"account_number": "502001"
+				}
+			},
+			"CADANGAN MODAL":{
+	        	"account_number": "503000",
+				"Cadangan Modal":{
+		        	"account_number": "503001"
+				}
+	        },
+	        "SALDO LABA": {
+	            "account_number": "504000"
+	        },
+	        "LABA RUGI TAHUN LALU": {
+	            "account_number": "504100",
+		        "Laba Rugi Tahun Lalu": {
+	            	"account_number": "504101"
+		        }
+	        },
+	        "LABA RUGI TAHUN BERJALAN": {
+	            "account_number": "504200",
+		        "Laba Rugi Tahun Berjalan": {
+	            	"account_number": "504201"
+		        },
+		        "Hystorical Balancing":{
+		        	"account_number": "504202"
+		        }
+	        },
+	        "PENGHASILAN KOMPREHENSIF LAIN - LAIN": {
+	            "account_number": "504300",
+	            "Penghasilan Komprehensif Lain - Lain":{
+	            	"account_number": "504301"
+	            },
+	            "Laba (Rugi) dari perubahan nilai aset keuangan": {
+		            "account_number": "504302"
+		        },
+		        "Keuntungan revaluasi aset dan kewajiban": {
+		            "account_number": "504303"
+		        },
+		        "Keuntungan (kerugian) akturial program pensiun": {
+		            "account_number": "504304"
+		        },
+		        "Bagian pend. komprehensif lain dari ent. asosiasi": {
+		            "account_number": "504305"
+		        },
+		        "Pajak penghasilan terkait laba komprehensif lain": {
+		            "account_number": "504306"
+		        }
+	        }
+	    },
+	    "PENDAPATAN USAHA": {
+	        "account_number": "601000",
+	        "root_type": "Income",
+            "Pendapatan Usaha": {
+		            "account_number": "601001"
+    	    },
+            "Pendapatan Usaha Lainnya": {
+	            "account_number": "601009"
+    	    },
+	        "REDUKSI PENDAPATAN USAHA": {
+	            "account_number": "610000",
+	            "Pendapatan Usaha": {
+		            "account_number": "611001"
+	    	    },
+	            "Pendapatan Usaha Lainnya": {
+		            "account_number": "611009"
+	    	    }
+	        },
+	        "PENDAPATAN DI LUAR USAHA": {
+	            "account_number": "621000",
+		        "Laba Selisih Kurs Yang Terealisasi":{
+		        	"account_number": "621001"
+		        },
+		        "Bunga Deposito": {
+		            "account_number": "621002"
+		        },
+		        "Jasa Giro (Bunga)": {
+		            "account_number": "621003"
+		        },
+		        "Dividen": {
+		            "account_number": "621004"
+		        },
+		        "Bagian Laba Perusahaan Asosiasi": {
+		            "account_number": "621005"
+		        },
+		        "Pendapatan Diluar Usaha Lain": {
+		            "account_number": "621009"
+		        }            
+	        }
+	    },
+	    "BIAYA ATAS PENDAPATAN": {
+	        "account_number": "701000",
+	        "root_type": "Expense",
+	        "is_group": 1,
+	        "Biaya Atas Pendapatan": {
+	            "account_number": "701100"
+	        },
+	        "Biaya Bagi Hasil": {
+	            "account_number": "701101"
+	        },
+	        "Biaya Bunga Pinjaman SGU": {
+	            "account_number": "701102"
+	        },
+	        "Biaya Bunga Pinjaman Bank": {
+	            "account_number": "701103"
+	        },
+	        "Biaya Jasa": {
+	            "account_number": "701104"
+	        },
+	        "Biaya lainnya": {
+	            "account_number": "701109"
+	        },
+	        "Pembelian": {
+	            "account_number": "709998"
+	        },
+	        "Direct cost applied": {
+	            "account_number": "709999"
+	        }            
+	    },
+	    "BIAYA OPERASIONAL": {
+	        "account_number": "710000",
+	        "root_type": "Expense",
+	        "BIAYA KARYAWAN, DIREKSI DAN KOMISARIS":{
+		        "account_number": "711100",
+		        "Gaji Direksi & Honor Komisaris": {
+		            "account_number": "711101"
+		        },
+		        "Gaji Karyawan": {
+		            "account_number": "711102"
+		        },
+		        "Tunjangan Transportasi": {
+		            "account_number": "711103"
+		        },
+		        "Tunjangan Seragam Kantor": {
+		            "account_number": "711104"
+		        },
+		        "Tunjangan Hari Raya": {
+		            "account_number": "711105"
+		        },
+		        "Tunjangan Jamsostek": {
+		            "account_number": "711106"
+		        },
+		        "Tunjangan Lainnya": {
+		            "account_number": "711107"
+		        },
+		        "Biaya Pengobatan": {
+		            "account_number": "711108"
+		        },
+		        "Lembur": {
+		            "account_number": "711109"
+		        },
+		        "Insentif Lainnya": {
+		            "account_number": "711110"
+		        },
+		        "Biaya Asuransi Karyawan": {
+		            "account_number": "711111"
+		        },
+		        "Tunjangan BPJS Kesehatan": {
+		            "account_number": "711112"
+		        },
+		        "Biaya Karyawan lainnya": {
+		            "account_number": "711199"
+		        }
+	        },
+	        "BIAYA PEMASARAN DAN PENJUALAN": {
+	            "account_number": "711200",
+	            "Biaya Iklan & Promosi":{
+		            "account_number": "711201"
+	            },
+		        "Biaya Komisi Penjualan": {
+		            "account_number": "711202"
+		        },
+		        "Biaya Entertainment & Gift": {
+		            "account_number": "711203"
+		        },
+		        "Biaya Pemasaran dan Pengembangan": {
+		            "account_number": "711204"
+		        },
+		        "Biaya Pemasaran Lainnya": {
+		            "account_number": "711209"
+		        }
+	        },
+	        "BIAYA SEWA": {
+	            "account_number": "711300",
+		        "Biaya Sewa Kendaraan": {
+		            "account_number": "711301"
+		        },"Biaya Sewa Bangunan Kantor": {
+		            "account_number": "711302"
+		        },
+		        "Biaya Sewa Perangkat Komputer": {
+		            "account_number": "711303"
+		        },
+		        "Biaya Sewa lainnya": {
+		            "account_number": "711309"
+		        }
+		    },
+		    "BIAYA KANTOR DAN UTILITY": {
+		        "account_number": "711400",
+		        "Biaya Pemeliharaan Kantor": {
+		            "account_number": "711401"
+		        },		        
+		        "Biaya Air": {
+		            "account_number": "711402"
+		        },
+		        "Biaya Listrik": {
+		            "account_number": "711403"
+		        },
+		        "Biaya Keperluan Dapur Kantor": {
+		            "account_number": "711404"
+		        },
+		        "Biaya Peralatan Kantor": {
+		            "account_number": "711405"
+		        },
+		        "Biaya Asuransi Gedung": {
+		            "account_number": "711406"
+		        },
+		        "Biaya Keamanan (Security)": {
+		            "account_number": "711407"
+		        },
+		        "Biaya Kebersihan (Cleaning service)": {
+		            "account_number": "711408"
+		        },
+		        "Biaya Kantor Lainnya": {
+		            "account_number": "711409"
+		        }
+	        },
+	        "BIAYA TELEPON DAN INTERNET": {
+		        "account_number": "711500",
+		        "Biaya Telepon Kantor": {
+		            "account_number": "711501"
+		        },   "Biaya Telepon Genggam (HP)": {
+		            "account_number": "711502"
+		        },
+		        "Biaya Internet": {
+		            "account_number": "711503"
+		        }
+			},
+	        "BIAYA KENDARAAN": {
+	            "account_number": "711600",
+		        "Biaya Pemeliharaan Kendaraan": {
+		            "account_number": "711601"
+		        },
+		        "Biaya Bensin": {
+		            "account_number": "711602"
+		        },
+		        "Biaya Toll": {
+		            "account_number": "711603"
+		        },
+		        "Biaya Parkir": {
+		            "account_number": "711604"
+		        },
+		        "Biaya Administrasi Kendaraan": {
+		            "account_number": "711605"
+		        },
+		        "Biaya Asuransi Kendaraan": {
+		            "account_number": "711606"
+		        },
+		        "Biaya Kendaraan Lainnya": {
+		            "account_number": "711699"
+		        }
+	        },
+	        "BIAYA PROFESSIONAL": {
+	            "account_number": "711700",
+		        "Biaya Audit Staff Ahli & Perizinan": {
+		            "account_number": "711701"
+		        },
+		        "Biaya Audit External": {
+		            "account_number": "711702"
+		        },
+		        "Biaya Audit Internal": {
+		            "account_number": "711703"
+		        },
+		        "Biaya Konsultan Pajak": {
+		            "account_number": "711704"
+		        },
+		        "Biaya Professional lainnya": {
+		            "account_number": "711709"
+		        }
+	        },
+	        "BIAYA PERCETAKAN, STATIONARY DAN PENGIRIMAN": {
+	            "account_number": "711800",
+	            "Biaya Percetakan & Fotocopy": {
+		            "account_number": "711801"
+		        },
+	            "Biaya ATK": {
+		            "account_number": "711802"
+		        },
+		        "Biaya Pengiriman": {
+		            "account_number": "711803"
+		        },
+		        "Biaya Sewa Fotocopy": {
+		            "account_number": "711804"
+		        }
+	        },
+	        "BIAYA PENYUSUTAN": {
+	            "account_number": "711900",
+	            "Biaya Penyusutan Tanah": {
+	    	        "account_number": "711901"
+		        },
+	            "Biaya Penyusutan Bangunan": {
+	    	        "account_number": "711902"
+		        },
+		        "Biaya Penyusutan Kendaraan": {
+		            "account_number": "711903"
+		        },
+		        "Biaya Penyusutan Mesin & Peralatan": {
+		            "account_number": "711904"
+		        },
+		        "Biaya Penyusutan Furniture": {
+		            "account_number": "711905"
+		        },
+		        "Biaya Penyusutan Komputer": {
+		            "account_number": "711906"
+		        },
+		        "Biaya Penyusutan Kapal": {
+		            "account_number": "711907"
+		        }
+	        },
+	        "BIAYA AMORTISASI": {
+	            "account_number": "712000",
+	            "Biaya Amortisasi Goodwill": {
+		            "account_number": "712001"
+		        },
+	            "Biaya Amortisasi Software": {
+		            "account_number": "712002"
+		        },
+		        "Biaya Amortisasi Aset Tidak Berwujud Lainnya": {
+		            "account_number": "712009"
+		        },
+		        "Biaya Amortisasi Biaya Ditangguhkan PraOperasional": {
+		            "account_number": "712101"
+		        },
+		        "Biaya Amortisasi Biaya Ditangguhkan Lain": {
+		            "account_number": "712109"
+		        }
+		     },
+	        "BIAYA PERJALANAN DINAS": {
+	            "account_number": "713000",
+		        "Biaya Hotel": {
+		            "account_number": "713001"
+		        },
+		        "Biaya Transport": {
+		            "account_number": "713002"
+		        },
+		        "Biaya Makan": {
+		            "account_number": "713003"
+		        },
+		        "Biaya Perjalanan Dinas Lainnya": {
+		            "account_number": "713004"
+		        }          
+	        },
+	        "BIAYA UMUM DAN ADMINISTRASI": {
+	            "account_number": "714000",
+		        "Biaya Jamuan Rapat": {
+		            "account_number": "714001"
+		        },
+		        "Biaya Recruitment": {
+		            "account_number": "714002"
+		        },
+		        "Biaya Pendidikan dan Latihan": {
+		            "account_number": "714003"
+		        },
+		        "Biaya Penyisihan Piutang": {
+		            "account_number": "714004"
+		        },
+		        "Biaya Denda Pajak": {
+		            "account_number": "714005"
+		        },
+		        "Biaya Donasi": {
+		            "account_number": "714006"
+		        },
+		        "Biaya Keanggotaan / Club Membership": {
+		            "account_number": "714007"
+		        },
+		        "Biaya Materai": {
+		            "account_number": "714008"
+		        },
+		        "Biaya Pemeliharaan dan Perbaikan system": {
+		            "account_number": "714009"
+		        },
+		        "Biaya Perizinan": {
+		            "account_number": "714010"
+		        },
+		        "Biaya Employee Gathering": {
+		            "account_number": "714011"
+		        },
+		        "Biaya Lisensi": {
+		            "account_number": "714012"
+		        },
+		        "Biaya Perangkat Komputer": {
+		            "account_number": "714013"
+		        },
+		        "Biaya Umum dan Administrasi lainnya": {
+		            "account_number": "714099"
+		        }
+	        }
+	    },
+	    "BIAYA NON OPERASIONAL": {
+	        "account_number": "720000",
+	        "root_type": "Expense",
+	        "Rugi Selisih Kurs Yang Terealisasi": {
+	            "account_number": "720001"
+	        },
+	        "Pajak Final Giro dan Deposito": {
+	            "account_number": "720002"
+	        },
+	        "Pajak Final Sewa Tanah dan Bangunan": {
+	            "account_number": "720003"
+	        },
+	        "Pajak Final Lainnya": {
+	            "account_number": "720004"
+	        },
+	        "Jasa/Administrasi Bank": {
+	            "account_number": "720005"
+	        },
+	        "Laba (Rugi) Penjualan/Penghapusan Aset Tetap": {
+	            "account_number": "720006"
+	        },
+	        "Bagian Rugi Perusahaan Asosiasi": {
+	            "account_number": "720007"
+	        },
+	        "Selisih Kas / Pembulatan": {
+	            "account_number": "720008"
+	        },
+	        "Biaya Penurunan Nilai Aset": {
+	            "account_number": "720009"
+	        },
+	        "Biaya diluar usaha lain lain": {
+	            "account_number": "720099"
+	        }
+	    },
+	    "BIAYA PAJAK": {
+	        "account_number": "730000",
+	        "root_type": "Expense",
+	        "Beban Pajak Kini": {
+	            "account_number": "730001"
+	        },
+	        "Beban (Manfaat) Pajak Tangguhan": {
+	            "account_number": "730002"
+	        }
+	    }
+	}
+}
